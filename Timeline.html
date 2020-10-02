@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: #474e5d;
+  background-color: #b3d9ff;
   font-family: Helvetica, sans-serif;
 }
 
@@ -136,71 +136,135 @@ body {
   left: 0%;
   }
 }
+.topnav {
+  overflow: hidden;
+  background-color: #2f2f1e;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: black;
+  color: white;
+}
+
+.topnav a.active {
+  color: #b3d9ff;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
 </style>
 </head>
 <body>
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" class="active">Home</a>
+    <a href="Timeline.html">Timeline</a>
+    <a href="my_companions.html">My Companions</a>
+    <a href="media.html">Media</a>
+    <a href="contact_me.html">Contact me</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
 
 <div class="timeline">
 	<div class="container left">
     <div class="content">
-      <h2>2020</h2>
-      <p>Joined in MSIT program at IIITH</p>
+      <h2>1998</h2>
+      <p>
+        <a href="gandhi.html">Born on 24th April,1998 in Mahatma Gandhi Hospital</a>
+        </p>
     </div>
   </div>
   <div class="container right">
     <div class="content">
-      <h2>2020</h2>
-      <p>Worked as a full time developer intern at Swecha for 4 months.</p>
+      
+      <h2>2001</h2>
+      <p>Joined St.Joseph's Public School</p>
+      
     </div>
   </div>
   <div class="container left">
     <div class="content">
-      <h2>2019</h2>
-      <p>Completed Graduation from MGIT with 67% in ECE </p>
+      <h2>2011</h2>
+      <p>Joined Narayana IIT Academy,Kothapet and passed out with 9.2 CGPA in 10th Class.</p>
+      
     </div>
   </div>
   <div class="container right">
     <div class="content">
-      <h2>2017</h2>
-      <p>Signed up as a volunteer at swecha for DevCon Hyderabad event</p>
+      <h2>2013</h2>
+      <p>Joined Narayana IIT Academy,Attapur Hyderabad for 11th Classs.</p>
+      
     </div>
   </div>
   <div class="container left">
+    <div class="content">
+      <h2>2014</h2>
+      <p>Joined Nine Education IIT Academy for 12th Class and Passed out with 89%</p>
+      
+    </div>
+  </div>
+  <div class="container right">
     <div class="content">
       <h2>2015</h2>
       <p>Joined in MGIT for B.Tech in ECE </p>
     </div>
   </div>
+  <div class="container left">
+    <div class="content">
+      <h2>2017</h2>
+      <p>Signed up as a volunteer at swecha for DevCon Hyderabad event</p>
+    </div>
+  </div>
   <div class="container right">
     <div class="content">
-      <h2>2014</h2>
-      <p>Joined Nine Education IIT Academy for 12th Class and Passed out with 89%</p>
+      <h2>2019</h2>
+      <p>Completed Graduation from MGIT with 67% in ECE </p>
     </div>
   </div>
   <div class="container left">
     <div class="content">
-      <h2>2013</h2>
-      <p>Joined Narayana IIT Academy,Attapur Hyderabad for 11th Classs.</p>
+      <h2>2020</h2>
+      <p>Worked as a full time developer intern at Swecha for 4 months.</p>
     </div>
   </div>
   <div class="container right">
     <div class="content">
-      <h2>2011</h2>
-      <p>Joined Narayana IIT Academy,Kothapet and passed out with 9.2 CGPA in 10th Class.</p>
-    </div>
-  </div>
-  <div class="container left">
-    <div class="content">
-      <h2>2001</h2>
-      <p>Joined St.Joseph's Public School</p>
-    </div>
-  </div>
-  <div class="container right">
-    <div class="content">
-      <h2>1998</h2>
-      <p>
-      <a href="gandhi.html">Born on 24th April,1998 in Mahatma Gandhi Hospital</a>
-      </p>
+      <h2>2020</h2>
+      Joined in Masters in Information Technology at IIITH
     </div>
   </div>
 </div>

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .topnav {
+      overflow: hidden;
+      background-color: #2f2f1e;
+    }
+    
+    .topnav a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    
+    .topnav a:hover {
+      background-color: black;
+      color: white;
+    }
+    
+    .topnav a.active {
+      color: #b3d9ff;
+    }
+    
+    .topnav .icon {
+      display: none;
+    }
+    
+    @media screen and (max-width: 600px) {
+      .topnav a:not(:first-child) {display: none;}
+      .topnav a.icon {
+        float: right;
+        display: block;
+      }
+    }
+    
+    @media screen and (max-width: 600px) {
+      .topnav.responsive {position: relative;}
+      .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+    }
+    body {
+  background-color: #b3d9ff;
+  
+  }
+  .slider {
+        width: 1000px;
+        height: 500px;
+        background-color: yellow;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+        text-align: center;
+        overflow: hidden;
+      }
+      .image-container {
+        width: 30000px;
+        background-color: pink;
+        height: 500px;
+        clear: both;
+        position: relative;
+        -webkit-transition: left 2s;
+        -moz-transition: left 2s;
+        -o-transition: left 2s;
+        transition: left 2s;
+      }
+      .slide {
+        float: left;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+      }
+      #slide-1:target ~ .image-container {
+        left: 0px;
+      }
+      #slide-2:target ~ .image-container {
+        left: -1000px;
+      }
+      #slide-3:target ~ .image-container {
+        left: -2000px;
+      }
+      #slide-4:target ~ .image-container {
+        left: -3000px;
+      }
+      #slide-5:target ~ .image-container {
+        left: -4000px;
+      }
+      #slide-6:target ~ .image-container {
+        left: -5000px;
+      }
+      #slide-7:target ~ .image-container {
+        left: -6000px;
+      }
+      #slide-8:target ~ .image-container {
+        left: -7000px;
+      }
+      #slide-9:target ~ .image-container {
+        left: -8000px;
+      }
+      #slide-10:target ~ .image-container {
+        left: -9000px;
+      }
+      #slide-11:target ~ .image-container {
+        left: -10000px;
+      }
+      #slide-12:target ~ .image-container {
+        left: -11000px;
+      }
+      #slide-13:target ~ .image-container {
+        left: -12000px;
+      }
+      #slide-14:target ~ .image-container {
+        left: -13000px;
+      }
+      #slide-15:target ~ .image-container {
+        left: -14000px;
+      }
+      #slide-16:target ~ .image-container {
+        left: -15000px;
+      }
+      #slide-17:target ~ .image-container {
+        left: -16000px;
+      }
+      #slide-18:target ~ .image-container {
+        left: -17000px;
+      }
+      #slide-19:target ~ .image-container {
+        left: -18000px;
+      }
+      #slide-20:target ~ .image-container {
+        left: -19000px;
+      }
+      #slide-21:target ~ .image-container {
+        left: -20000px;
+      }
+      #slide-22:target ~ .image-container {
+        left: -21000px;
+      }
+      #slide-23:target ~ .image-container {
+        left: -22000px;
+      }
+      #slide-24:target ~ .image-container {
+        left: -23000px;
+      }
+      #slide-25:target ~ .image-container {
+        left: -24000px;
+      }
+      #slide-26:target ~ .image-container {
+        left: -25000px;
+      }
+      #slide-27:target ~ .image-container {
+        left: -26000px;
+      }
+      #slide-28:target ~ .image-container {
+        left: -27000px;
+      }
+      #slide-29:target ~ .image-container {
+        left: -28000px;
+      }
+      #slide-30:target ~ .image-container {
+        left: -29000px;
+      }
+      .buttons {
+        position: relative;
+        top: -20px;
+      }
+      .buttons a {
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        border-radius: 50px;
+        background-color: white;
+      }
+    </style>
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active">Home</a>
+        <a href="Timeline.html">Timeline</a>
+        <a href="my_companions.html">My Companions</a>
+        <a href="media.html">Media</a>
+        <a href="contact_me.html">Contact me</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div> 
+      <h1 style="text-align: center;"><u>Images</u></h1>
+      <p style="text-align: center;">These are some of the images taken as a part of my memories</p>
+      <div class="slider">
+        <span id="slide-1"></span>
+        <span id="slide-2"></span>
+        <span id="slide-3"></span>
+        <span id="slide-4"></span>
+        <span id="slide-5"></span>
+        <span id="slide-6"></span>
+        <span id="slide-7"></span>
+        <span id="slide-8"></span>
+        <span id="slide-9"></span>
+        <span id="slide-10"></span>
+        <span id="slide-11"></span>
+        <span id="slide-12"></span>
+        <span id="slide-13"></span>
+        <span id="slide-14"></span>
+        <span id="slide-15"></span>
+        <span id="slide-16"></span>
+        <span id="slide-17"></span>
+        <span id="slide-18"></span>
+        <span id="slide-19"></span>
+        <span id="slide-20"></span>
+        <span id="slide-21"></span>
+        <span id="slide-22"></span>
+        <span id="slide-23"></span>
+        <span id="slide-24"></span>
+        <span id="slide-25"></span>
+        <span id="slide-26"></span>
+        <span id="slide-27"></span>
+        <span id="slide-28"></span>
+        <span id="slide-29"></span>
+        <span id="slide-30"></span>
+        <div class="image-container">
+          <img src="Gandhi.jpg" class="slide" width="1000" height="500" />
+          <img src="stjps logo.jfif" class="slide" width="1000" height="500" />
+          <img src="stjps gate.webp" class="slide" width="1000" height="500" />
+          <img src="stjps dance.jpg" class="slide" width="1000" height="500" />
+          <img src="narayana 10th.jpg" class="slide" width="1000" height="500" />
+          <img src="nine logo.png" class="slide" width="1000" height="500" />
+          <img src="poster.jpg" class="slide" width="1000" height="500" />
+          <img src="gang.jpeg" class="slide" width="1000" height="500" />
+          <img src="gang2.jpg" class="slide" width="1000" height="500" />
+          <img src="gang3.jpg" class="slide" width="1000" height="500" />
+          <img src="dance.jpg" class="slide" width="1000" height="500" />
+          <img src="dance1.jpg" class="slide" width="1000" height="500" />
+          <img src="skit.jpg" class="slide" width="1000" height="500" />
+          <img src="games1.jpg" class="slide" width="1000" height="500" />
+          <img src="games2.jpg" class="slide" width="1000" height="500" />
+          <img src="farewell.jpg" class="slide" width="1000" height="500" />
+          <img src="mgit1.jpg" class="slide" width="1000" height="500" />
+          <img src="mgit2.jpg" class="slide" width="1000" height="500" />
+          <img src="mgit3.jpg" class="slide" width="1000" height="500" />
+          <img src="sz.jpg" class="slide" width="1000" height="500" />
+          <img src="mc poster.jpg" class="slide" width="1000" height="500" />
+          <img src="mc enterance.jpg" class="slide" width="1000" height="500" />
+          <img src="px.jpg" class="slide" width="1000" height="500" />
+          <img src="groupmgit.jpg" class="slide" width="1000" height="500" />
+          <img src="mgit4.jpg" class="slide" width="1000" height="500" />
+          <img src="slogan.jpg" class="slide" width="1000" height="500" />
+          <img src="sodgroup.jpg" class="slide" width="1000" height="500" />
+          <img src="sod2.jpg" class="slide" width="1000" height="500" />
+          <img src="sip1.jpg" class="slide" width="1000" height="500" />
+          <img src="sip group.jpg" class="slide" width="1000" height="500" />
+        </div>
+        <div class="buttons">
+          <a href="#slide-1"></a>
+          <a href="#slide-2"></a>
+          <a href="#slide-3"></a>
+          <a href="#slide-4"></a>
+          <a href="#slide-5"></a>
+          <a href="#slide-6"></a>
+          <a href="#slide-7"></a>
+          <a href="#slide-8"></a>
+          <a href="#slide-9"></a>
+          <a href="#slide-10"></a>
+          <a href="#slide-11"></a>
+          <a href="#slide-12"></a>
+          <a href="#slide-13"></a>
+          <a href="#slide-14"></a>
+          <a href="#slide-15"></a>
+          <a href="#slide-16"></a>
+          <a href="#slide-17"></a>
+          <a href="#slide-18"></a>
+          <a href="#slide-19"></a>
+          <a href="#slide-20"></a>
+          <a href="#slide-21"></a>
+          <a href="#slide-22"></a>
+          <a href="#slide-23"></a>
+          <a href="#slide-24"></a>
+          <a href="#slide-25"></a>
+          <a href="#slide-26"></a>
+          <a href="#slide-27"></a>
+          <a href="#slide-28"></a>
+          <a href="#slide-29"></a>
+          <a href="#slide-30"></a>
+        </div>
+      </div>
+<h1 style="text-align: center;"><u>Videos</u></h1>
+<p style="text-align: center;">These are some of the videos which i have for you</p>
+<table style="width:100%">
+    <tr>
+      <th>
+        <video width="300" height="300" controls>
+            <source src="mgitdance.mp4" type="video/mp4">
+        </video>
+      </th>
+      <th>
+        <video width="300" height="300" controls>
+            <source src="video_1.mp4" type="video/mp4">
+        </video>
+      </th> 
+      <th>
+        <video width="300" height="300" controls>
+            <source src="sip_activity video.mp4" type="video/mp4">
+        </video>
+      </th>
+    </tr>
+   
+  </table>
+</body>
+</html>

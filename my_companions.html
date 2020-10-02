@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .topnav {
+  overflow: hidden;
+  background-color: #2f2f1e;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: black;
+  color: white;
+}
+
+.topnav a.active {
+  color: #b3d9ff;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+body {
+  background-color: #b3d9ff;
+  
+  }
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active">Home</a>
+        <a href="Timeline.html">Timeline</a>
+        <a href="my_companions.html">My Companions</a>
+        <a href="media.html">Media</a>
+        <a href="contact_me.html">Contact me</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div> 
+      <h1 style="text-align: center;">My Companions</h1>
+      <p style="text-align: center;">These are the people who stood by me in different phases of life and are always close to my heart.I could add only few for now , there are many in my life.</p>
+      <div class="row">
+        <div class="column">
+            <img src="Racer.jpg" alt="Mountains" style="width:100%">
+        </div>
+        
+        <div class="column">
+          <img src="potato.jpg" alt="Snow" style="width:100%">
+        </div>
+        
+        <div class="column">
+        <img src="Amul.jpg" alt="Snow" style="width:100%">
+          </div>
+        <div class="column">
+        <img src="Appu.jpg" alt="Snow" style="width:100%">
+        </div>
+        
+        <div class="column">
+        <img src="madu.jpeg" alt="Snow" style="width:100%">
+        </div>
+        <div class="column">
+        <img src="pavi.jpg" alt="Snow" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="family.JPG" alt="Snow" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="phiski.jpg" alt="Snow" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="janu.jpeg" alt="Snow" style="width:100%">
+      </div>
+      </div>
+       
+</body>
+</html>

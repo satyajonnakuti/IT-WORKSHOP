@@ -1,5 +1,5 @@
   div.b {
-  text-align: left;
+  text-align: center;
 }
   .fa {
   padding: 20px;
@@ -57,7 +57,7 @@
       margin: 0;
       padding: 0;
       overflow: hidden;
-      background-color: #152113;
+      background-color: #2f2f1e;
     }
     
     li {
@@ -66,15 +66,16 @@
     
     li a {
       display: block;
-      color: white;
+      color: #b3d9ff;
       text-align: center;
       padding: 14px 16px;
       text-decoration: none;
     }
     
     li a:hover {
-      background-color: #A8A579;
+      background-color: black;
     }
     body {
-  background-color: rgb(255, 253, 158);
+  background-color: #b3d9ff;
+  
   }
